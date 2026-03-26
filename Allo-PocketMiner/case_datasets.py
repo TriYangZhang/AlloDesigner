@@ -51,14 +51,14 @@ class PreprocessedDataLoader:
 
 def deepallo_dataset_split(batch_size, y_type='float32'):
 
-    test_processed_path = './case/GLP1/5vex_apo_model.npy'
-    #test_processed_path = './case/CB1R/CB1R_apo_model.npy'
-    #test_processed_path = '/case/PCSK9/4ne9.npy'
+    test_processed_path = './data/case/GLP1/5vex_apo_model.npy'
+    #test_processed_path = './data/case/CB1R/CB1R_apo_model.npy'
+    #test_processed_path = './data/case/PCSK9/4ne9.npy'
     test_processed = np.load(test_processed_path, allow_pickle=True)
     testset = PreprocessedDataLoader(test_processed, batch_size)
 
     # HRAS 4DLV
-    # test_processed_path = '.data/deepallo_defined_test_processed.np'  #allosteric residues labels
+    # test_processed_path = './data/apo/deepallo_defined_test_processed.np'  #allosteric residues labels
     # test_processed = np.load(test_processed_path, allow_pickle=True)
     # testset = PreprocessedDataLoader(test_processed[2250:2299], batch_size)  
 

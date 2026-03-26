@@ -49,9 +49,9 @@ class PreprocessedDataLoader:
 
 def deepallo_dataset_split(batch_size, y_type='float32'):
  
-    test_processed_path = '.data/ligsite_test_processed.npy'  # ligiste cryptic resides
+    test_processed_path = './data/apo/ligsite_test_processed.npy'  # ligiste cryptic resides
 
-    #test_processed_path = '.data/deepallo_defined_test_processed.npy'  #allosteric residues labels
+    #test_processed_path = './data/apo/deepallo_defined_test_processed.npy'  #allosteric residues labels
 
     test_processed = np.load(test_processed_path, allow_pickle=True)
 
